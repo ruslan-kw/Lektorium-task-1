@@ -1,0 +1,121 @@
+/* Загальні властивості */
+
+.cube {
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+
+.square {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border: solid 5px #000;
+  border-radius: 20px;
+  display: inline-flex;
+  vertical-align: top;
+  margin: 5px;
+}
+
+.square__point {
+  
+}
+
+.square__point::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000; 
+}
+
+
+/* Перший кубик */
+
+.square_one {
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Другий кубик */
+
+.square_two {
+  justify-content: space-between;
+}
+
+
+/* Другий кубик */
+
+.square_two {
+  justify-content: space-between;
+}
+
+.square_two .square__point:nth-child(2) {
+  align-self: flex-end;
+}
+
+
+/* Третій кубик */
+
+.square_three {
+  justify-content: space-between;
+}
+
+.square_three .square__point:nth-child(3) {
+  align-self: flex-end;
+}
+
+.square_three .square__point:nth-child(2) {
+  align-self: center;
+}
+
+
+/* Четвертий кубик */
+
+.square_four {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.square_four .square__point {
+  width: 50%;
+}
+
+.square_four .square__point:nth-child(even) {  
+  text-align: right;
+}
+
+
+/* П"ятий кубик */
+
+.square_five {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+  
+.square_five .square__point:nth-child(3) {  
+  width: 100%;
+  text-align: center;
+}
+  
+
+
+
+.square_six {
+  flex-flow: wrap column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/* Перенос елементів */
+
+.new-string {
+  width: 100%;
+}
